@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import { Route, Routes } from 'react-router-dom'
 import Header from './components/Header/Header';
-import SwipeToSlide from './components/Carousel/Carousel';
+import { SwipeToSlide } from './components/Carousel/Carousel';
 import Gallery from './components/Gallery/Gallery';
 import { Services } from './components/Services/Services';
 import { PageStyling } from './components/PageStyling/PageStyling';
