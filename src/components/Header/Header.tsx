@@ -27,7 +27,7 @@ function CollapsibleExample() {
                         </NavDropdown> */}
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets"><p className='contacts'>КОНТАКТЫ</p></Nav.Link>
+                        <Nav.Link href="form"><p className='contacts'>КОНТАКТЫ</p></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
