@@ -1,0 +1,39 @@
+.main{
+    padding: 20px 70px;
+    display: flex;
+    background-color: #CECBC4;
+    gap: 50px;
+    .main__content{
+        margin: 0 auto;
+        text-align: start;
+        padding-left: 50px;
+        .firstname,.lastname{
+            font-weight: bolder;
+            font-size: 50px;
+            color: #382C24;
+            font-family: Book Antiqua;
+        }
+        .instagram{
+            color: #382C24;
+            text-decoration: none;
+            background-color: transparent;
+            &:hover{
+                border-bottom: 1px solid #382C24;
+            }
+        }
+        .text{
+            margin-top: 100px;
+                margin-left: 30px;
+                color: #978A81;
+        }
+    }
+}
+
+.user__image{
+    max-width: 500px;
+    
+}
+
+.main__title{
+color: #5A5C44;
+}

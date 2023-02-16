@@ -1,0 +1,39 @@
+
+.services{
+background-color: #adaf97;
+padding-top: 20px;
+.services__title {
+    text-align: center;
+    color: #937a3f;
+    width: 100%;
+    font-size: 50px;
+    font-family: Book Antiqua;
+}
+.services__text{
+    text-align: center;
+    color: #CECBC4;
+    width: 100%;
+    font-size: 18px;
+}
+.card-group{
+    background-color: #adaf97;
+    gap: 0;
+    .card{
+    background-color: #adaf97;
+    margin-bottom: 0;
+    }
+    .card-img-overlay {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+            align-items: center;
+            .btn-outline-warning{
+                max-width: 120px;
+            }
+            .card-title {
+                margin-bottom: 20px;
+            }
+        }
+}
+}

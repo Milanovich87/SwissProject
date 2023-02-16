@@ -1,0 +1,41 @@
+.main__form{
+    max-width: 500px;
+    margin: 50px auto;
+    max-width: 500px;
+        background: #d4d3cf;
+        padding: 10px;
+        border-radius: 10px;
+        .form-control{
+            margin: 10px 0;
+        }
+        .form-text{
+            font-size: 18px;
+            font-family: Calibri;
+            color: #212529;
+        }
+        a{
+            text-decoration: none;
+        }
+        .btn{
+            text-decoration: none;
+                font-family: Calibri;
+                font-size: 20px;
+                letter-spacing: 1px;
+                line-height: 15px;
+                border-radius: 10px;
+                background: #C28F7A;
+                transition: all 0.3s ease 0s;
+                display: block;
+                color: #212529;
+                padding: 10px;
+                text-align: center;
+                width: 100%;
+                border: none;
+                &:hover {
+                    color: #FFF;
+                    background: #b5ad96;
+                    border: 2px solid #b5ad96;
+                    text-decoration: none;
+                }
+        }
+}
