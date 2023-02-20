@@ -1,12 +1,15 @@
 .main{
-    padding: 20px 70px;
+    padding: 20px 0;
     display: flex;
     background-color: #CECBC4;
-    gap: 50px;
+    justify-content: space-between;
+    // gap: 50px;
+    max-width: 1190px;
+    margin: 0 auto;
     .main__content{
-        margin: 0 auto;
+        // margin: 0 auto;
         text-align: start;
-        padding-left: 50px;
+        // padding-left: 50px;
         .firstname,.lastname{
             font-weight: bolder;
             font-size: 50px;
@@ -24,7 +27,8 @@
         .text{
             margin-top: 100px;
                 margin-left: 30px;
-                color: #978A81;
+                color: #382C24;
+                font-size: 20px;
         }
     }
 }

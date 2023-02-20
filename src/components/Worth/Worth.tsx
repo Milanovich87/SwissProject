@@ -43,7 +43,7 @@ export const Worth = () => {
                 </div>
             </div>
             <div className="footer__worth">
-                <h2 className='footer__title'>“МАСШТАБИРУЮ ВОЗМОЖНОСТИ ТВОЕГО ГАРДЕРОБА”</h2>
+                {/* <h2 className='footer__title'>“МАСШТАБИРУЮ ВОЗМОЖНОСТИ ТВОЕГО ГАРДЕРОБА”</h2> */}
                 <p className='footer__text'>Вы всегда можете написать мне на <a href="mailto: info@milanovich.ch">info@milanovich.ch</a></p>
 
             </div>

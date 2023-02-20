@@ -1,13 +1,13 @@
 import { useState } from 'react'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faCircleChevronLeft,
     faCircleChevronRight,
     faCircleXmark
 } from '@fortawesome/free-solid-svg-icons'
-
 import './wsp-gallery.scss'
+import { ImageList, ImageListItem } from '@mui/material'
+
 
 const WSPGallery = ({ galleryImages }: any) => {
 
@@ -38,9 +38,9 @@ const WSPGallery = ({ galleryImages }: any) => {
             : setSlideNumber(slideNumber + 1)
     }
 
+
     return (
         <div className='gallery'>
-
             {openModal &&
                 <div className='sliderWrap'>
                     <FontAwesomeIcon icon={faCircleXmark} className='btnClose' onClick={handleCloseModal} />
@@ -51,27 +51,21 @@ const WSPGallery = ({ galleryImages }: any) => {
                     </div>
                 </div>
             }
-
             <div className='galleryWrap'>
-                {
-                    galleryImages && galleryImages.map((slide: any, index: any, image: any) => {
-                        return (
-                            <div className="qwe">
-                                <img
-                                    className='single'
-                                    key={index}
-                                    src={slide}
-                                    onClick={() => handleOpenModal(index)}
-                                >
-                                </img>
-
-                            </div>
-
-                        )
-                    })
-                }
+                <ImageList variant="masonry" cols={2} gap={5}>
+                    {galleryImages && galleryImages.map((item: any, index: any) => (
+                        <ImageListItem key={index}>
+                            <img
+                                src={`${item}?w=248&fit=crop&auto=format`}
+                                srcSet={`${item}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                alt={item}
+                                onClick={() => handleOpenModal(index)}
+                                loading="lazy"
+                            />
+                        </ImageListItem>
+                    ))}
+                </ImageList>
             </div>
-
         </div>
     )
 }

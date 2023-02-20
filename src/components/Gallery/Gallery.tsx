@@ -1,7 +1,4 @@
 import WSPGallery from './photos';
-import React from 'react';
-import SkeletonCarousel from '../Carousel/SkeletonCarousel';
-
 let galleryImages: never[] = [];
 // class Gallery extends React.Component {
 
@@ -35,17 +32,10 @@ let galleryImages: never[] = [];
 // }
 export const Gallery = () => {
 
-
-    const [isLoading, setIsLoading] = React.useState(true)
-
     const importAll = (r: any) => {
         return r.keys().map(r);
     }
     const galleryImages = importAll(require.context('../../assets/imagesPortfolio/', false, /\.(png|jpe?g|svg)$/));
-
-    React.useEffect(() => {
-        setIsLoading(false)
-    }, [])
 
     return (
         <div className="port">
@@ -53,11 +43,9 @@ export const Gallery = () => {
             <div>
                 <h2 className='port__title'>PORTFOLIO</h2>
             </div>
-
-            {isLoading ? [...new Array(4)].map((_, index) => <SkeletonCarousel key={index} />) :
-                <WSPGallery
-                    galleryImages={galleryImages}
-                />}
+            <WSPGallery
+                galleryImages={galleryImages}
+            />
             <br />
             <h2 className="styling__email">
                 Contact me <a href="mailto: info@milanovich.ch">info@milanovich.ch</a>

@@ -1,7 +1,9 @@
 
 .wrapper {
     margin: 0 auto;
-    padding: 20px 70px;
+    padding: 20px 0;
+    max-width: 1190px;
+    margin: 0 auto;
     border-top: 1px solid rgba(0, 0, 0, .1);
     .header__worth{
         margin-bottom: 40px;
@@ -31,7 +33,7 @@
                 justify-content: space-between;
                 width: 100%;
                 border-bottom: 1px solid rgba(0, 0, 0, .1);
-                margin-top: 40px;
+                margin-top: 31px;
                 .list__title {
                     max-width: 40%;
                     font-family: Calibri;
@@ -60,7 +62,7 @@
     }
     .footer__text{
         text-align: center;
-        font-size: 18px;
+        font-size: 24px;
         color: #382C24;
         font-family: Calibri;
         a{

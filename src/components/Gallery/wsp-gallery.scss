@@ -1,7 +1,7 @@
 .gallery{
     // background: #CECBC4;
     background-color: #CECBC4;
-    max-width: 1120px;
+    max-width: 1190px;
         margin: 0 auto;
 }
 .galleryWrap {
@@ -13,7 +13,7 @@
     // grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
     // justify-items: stretch;
     // gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(580px, 1fr));
     // align-items: center;
     // align-content: stretch;
     // grid-auto-flow: dense;

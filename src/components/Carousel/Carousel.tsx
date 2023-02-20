@@ -27,7 +27,7 @@ import "slick-carousel/slick/slick-theme.css";
 import './Carousel.scss'
 import { Main } from '../Main/Main';
 import { Worth } from '../Worth/Worth';
-import SkeletonCarousel from './SkeletonCarousel';
+import { Services } from '../Services/Services';
 
 export const SwipeToSlide = () => {
 
@@ -44,9 +44,7 @@ export const SwipeToSlide = () => {
         swipeToSlide: true,
         variableWidth: true,
         variableHeight: true,
-
         adaptiveHeight: true,
-
         responsive: [
             {
                 breakpoint: 768,
@@ -103,6 +101,7 @@ export const SwipeToSlide = () => {
                 </div>
             </Slider>
             <Main />
+            <Services />
             <Worth />
         </>
 
