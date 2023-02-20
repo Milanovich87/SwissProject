@@ -5,7 +5,9 @@ import {
     faCircleChevronRight,
     faCircleXmark
 } from '@fortawesome/free-solid-svg-icons'
-import './wsp-gallery.scss'
+// import './wsp-gallery.scss'
+import './qwe.scss'
+
 import { ImageList, ImageListItem } from '@mui/material'
 
 
@@ -51,20 +53,14 @@ const WSPGallery = ({ galleryImages }: any) => {
                     </div>
                 </div>
             }
-            <div className='galleryWrap'>
-                <ImageList id="img" variant="masonry" cols={2} gap={5}>
-                    {galleryImages && galleryImages.map((item: any, index: any) => (
-                        <ImageListItem key={index}>
-                            <img
-                                src={`${item}?w=248&fit=crop&auto=format`}
-                                srcSet={`${item}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                alt={item}
-                                onClick={() => handleOpenModal(index)}
-                                loading="lazy"
-                            />
-                        </ImageListItem>
-                    ))}
-                </ImageList>
+            <div className='wer'>
+                {galleryImages && galleryImages.map((item: any, index: any) => {
+                    return (
+                        <div className="pics" key={index}>
+                            <img src={item} onClick={() => handleOpenModal(index)} style={{ width: '100%' }} />
+                        </div>
+                    )
+                })}
             </div>
         </div>
     )

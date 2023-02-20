@@ -1,36 +1,45 @@
-.gallery{
+.gallery {
     // background: #CECBC4;
     background-color: #CECBC4;
-    max-width: 1190px;
-        margin: 0 auto;
+    // max-width: 1190px;
+    margin: 0 auto;
 }
-.galleryWrap {
-    // display: flex;
-    // flex-wrap: wrap;
-    display: grid;
-    gap: 5px;   
-    // grid-template-rows:repeat(3, 1fr);
-    // grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
-    // justify-items: stretch;
-    // gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(580px, 1fr));
-    // align-items: center;
-    // align-content: stretch;
-    // grid-auto-flow: dense;
-    // justify-self: stretch;
-    // align-self: stretch;
-    // justify-content: center;
-    // grid-auto-rows: repeat(auto-fit, minmax(100px, auto));
-        // grid-auto-columns: repeat(auto-fit, minmax(100px, auto));
-    
-    // background: #CECBC4;
-        background-color: #CECBC4;
+.wer{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33.33%;
+    -moz-column-width: 33.33%;
+    column-width: 33.33%;
+    padding: 0 12px;
+    .pics{
+        -webkit-transition: all 350ms ease;
+        transition: all 350ms ease;
+        cursor: pointer;
+        margin-bottom: 12px;
+        &:hover{
+            filter: opacity(.8);
+        }
+    }
+}
+@media(max-width: 991px){
+    .wer {
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+        }
+}
+@media(max-width: 480px) {
+    .wer {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
 }
 
-.qwe{
-    position: relative;
-    padding: 0px 0px 100% 0px;
-}
 .single {
     position: absolute;
     top: 0;
@@ -39,22 +48,18 @@
     height: 100%;
     object-fit: cover;
 }
-// .qwe__big{
-//     grid-column: span 2;
-//     grid-row: span 2;
-// }
 
 // .galleryWrap .single {
 //     width: 200px;
 //     cursor: pointer;
-    
+
 // }
 
 
 // .galleryWrap .single img {
 //     max-width: 100%;
 //     overflow: hidden;
-    
+
 // }
 
 .galleryWrap .single img:hover {
@@ -128,15 +133,3 @@
     user-select: none;
     /* Standard syntax */
 }
-
-// #img{
-//     display: grid;
-//     grid-template-columns: repeat(auto-fit, minmax(580px, 1fr));
-// }
-
-// @media (max-width: 1165px) {
-//     #img {
-//             display: grid;
-//             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-//         }
-// }

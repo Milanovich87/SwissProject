@@ -1,4 +1,4 @@
-import WSPGallery from './photos';
+import WSPGallery from './qwe';
 let galleryImages: never[] = [];
 // class Gallery extends React.Component {
 
