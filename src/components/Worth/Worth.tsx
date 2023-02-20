@@ -35,12 +35,14 @@ export const Worth = () => {
                     </li>
                     <li>
                         <h3 className="list__title">ЗАБОТА</h3>
-                        <p className="list__text">Выбирать то, что подходит вашей внешности и не идти на компромиссы.</p>
+                        <p className="list__text">
+                            Выбирать то, что подходит вашей внешности и не идти на компромиссы.
+                        </p>
                     </li>
                 </div>
-                <div className="main__image">
+                {/* <div className="main__image">
                     <img className="user__image" src={worth} />
-                </div>
+                </div> */}
             </div>
             <div className="footer__worth">
                 {/* <h2 className='footer__title'>“МАСШТАБИРУЮ ВОЗМОЖНОСТИ ТВОЕГО ГАРДЕРОБА”</h2> */}
