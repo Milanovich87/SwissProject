@@ -7,7 +7,7 @@ import './Header.scss';
 
 function CollapsibleExample() {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="secondary" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="secondary" variant="dark" fixed="top">
             <Container>
                 <Navbar.Brand className='header__logo' href="/">MILA MILANOVICH</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -21,18 +21,21 @@ export const App = () => {
 
     <div className='App' >
       <Header />
-      <Routes>
-        <Route path='/'>
-          <Route index element={<SwipeToSlide />} />
-          <Route path='portfolio' element={<Gallery />} />
-          <Route path='services' element={<Services />} />
-          <Route path='styling' element={<PageStyling />} />
-          <Route path='wardrobe' element={<Wardrobe />} />
-          <Route path='escort' element={<Escort />} />
-          <Route path='form' element={<Form />} />
-          <Route path='privacy' element={<PrivacyPolicy />} />
-        </Route>
-      </Routes>
+      <div className="content">
+        <Routes>
+          <Route path='/'>
+            <Route index element={<SwipeToSlide />} />
+            <Route path='portfolio' element={<Gallery />} />
+            <Route path='services' element={<Services />} />
+            <Route path='styling' element={<PageStyling />} />
+            <Route path='wardrobe' element={<Wardrobe />} />
+            <Route path='escort' element={<Escort />} />
+            <Route path='form' element={<Form />} />
+            <Route path='privacy' element={<PrivacyPolicy />} />
+          </Route>
+        </Routes>
+      </div>
+
       <Footer />
     </div >
   );

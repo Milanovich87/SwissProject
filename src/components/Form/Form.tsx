@@ -43,42 +43,48 @@ function FormFloatingBasicExample() {
     })
     const [show, setShow] = useState(false);
     return (
-        <div className='main__form'>
-            <Form id='tg'>
-                <Form.Text >Чтобы заказать услугу или связаться со мной, заполните, пожалуйста, форму для обратной связи и нажмите кнопку "ОТПРАВИТЬ".</Form.Text>
-                <FloatingLabel controlId="floatingInput" label="Имя">
-                    <Form.Control type="text" name='name' placeholder="Имя" />
-                </FloatingLabel>
-                <FloatingLabel
-                    controlId="floatingInput"
-                    label="Email"
-                    className="mb-3"
-                >
-                    <Form.Control type="email" name='email' placeholder="Email" />
-                </FloatingLabel>
-                <FloatingLabel controlId="floatingTextarea2" label="Сообщение">
-                    <Form.Control
-                        as="textarea"
-                        name='textarea'
-                        placeholder="Сообщение"
-                        style={{ height: '100px' }}
-                    />
-                </FloatingLabel>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label=' ' />
-                    <Form.Text >
-                        Согласен (-на)с <Link to='/privacy'>политикой конфиденциальности</Link> и обработки персональных данных.
-                        {/* Согласен (-на)с <a href="">политикой конфиденциальности</a> и обработки персональных данных. */}
-                    </Form.Text >
-                </Form.Group>
-                <Button variant="primary" type="submit" onClick={() => setShow(true)}>
-                    Отправить
-                </Button>
-            </Form>
-            <Alert variant="success" show={show} onClose={() => setShow(false)} dismissible>
-                Сообщение отправлено!
-            </Alert>
-        </div>
+        <>
+            <div className="form__title">
+                <h2>ФОРМА ОБРАТНОЙ СВЯЗИ</h2>
+            </div>
+            <div className='main__form'>
+                <Form id='tg'>
+                    <Form.Text >Чтобы заказать услугу или связаться со мной, заполните, пожалуйста, форму для обратной связи и нажмите кнопку "ОТПРАВИТЬ".</Form.Text>
+                    <FloatingLabel controlId="floatingInput" label="Имя">
+                        <Form.Control type="text" name='name' placeholder="Имя" />
+                    </FloatingLabel>
+                    <FloatingLabel
+                        controlId="floatingInput"
+                        label="Email"
+                        className="mb-3"
+                    >
+                        <Form.Control type="email" name='email' placeholder="Email" />
+                    </FloatingLabel>
+                    <FloatingLabel controlId="floatingTextarea2" label="Сообщение">
+                        <Form.Control
+                            as="textarea"
+                            name='textarea'
+                            placeholder="Сообщение"
+                            style={{ height: '100px' }}
+                        />
+                    </FloatingLabel>
+                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                        <Form.Check type="checkbox" label=' ' />
+                        <Form.Text >
+                            Согласен (-на)с <Link to='/privacy'>политикой конфиденциальности</Link> и обработки персональных данных.
+                            {/* Согласен (-на)с <a href="">политикой конфиденциальности</a> и обработки персональных данных. */}
+                        </Form.Text >
+                    </Form.Group>
+                    <Button variant="primary" type="submit" onClick={() => setShow(true)}>
+                        Отправить
+                    </Button>
+                </Form>
+                <Alert variant="success" show={show} onClose={() => setShow(false)} dismissible>
+                    Сообщение отправлено!
+                </Alert>
+            </div>
+        </>
+
     );
 }
 
