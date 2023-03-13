@@ -38,7 +38,7 @@ export const PageStyling = () => {
                 </div>
             </div>
             <h2 className="styling__email">
-                запись на услуги <a href="mailto: info@milanovich.ch">info@milanovich.ch</a>
+                запись на услуги <a href="mailto: info@milanovich.ch"> info@milanovich.ch</a>
             </h2>
         </div>
 

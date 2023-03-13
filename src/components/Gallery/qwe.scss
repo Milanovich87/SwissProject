@@ -5,12 +5,12 @@
     margin: 0 auto;
 }
 .wer{
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-width: 33.33%;
-    -moz-column-width: 33.33%;
-    column-width: 33.33%;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 50%;
+    -moz-column-width: 50%;
+    column-width: 50%;
     padding: 0 12px;
     .pics{
         -webkit-transition: all 350ms ease;
@@ -98,7 +98,7 @@
 }
 
 .sliderWrap .btnClose {
-    top: 40px;
+    top: 60px;
     right: 40px;
 }
 
@@ -123,6 +123,7 @@
 }
 
 .fullScreenImage img {
+    margin-top: 80px;
     max-width: 100%;
     max-height: 100%;
     pointer-events: none;
