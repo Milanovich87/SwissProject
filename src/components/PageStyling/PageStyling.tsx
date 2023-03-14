@@ -23,8 +23,6 @@ export const PageStyling = () => {
                         <img className="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src={serv11} data-holder-rendered="true" />
                     </div>
                 </div>
-
-
             </div>
             <div className="pricing">
                 <div className="wardrobe__ptice">

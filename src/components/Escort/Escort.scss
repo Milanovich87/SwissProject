@@ -1,142 +1,135 @@
 
 .escort{
     margin: 0 auto;
-    padding: 60px 80px;
+    padding: 20px 0;
     background-color: #CECBC4;
-    font-family: Calibri;
-.escort__content {
     display: flex;
-    .escort__info {
-                text-align: start;
-                padding-right: 20px;
-                .escort__title2 {
-                        color: #8F8774;
-                        width: 100%;
-                        font-size: 20px;
-                    }
-                
-                    .escort__title {
-                        color: #382C24;
-                        width: 100%;
-                        font-size: 35px;
-                    }
-                
-                    .escort__description,
-                    .escort__description2,
-                    .escort__description3,
-                    .any__info {
-                        margin-top: 20px;
-                
-                        .subtitle {
-                            width: 100%;
-                            font-size: 30px;
-                            color: #5A5C44;
-                            margin: 30px 0;
-                        }
-                
-                        .title {
-                            margin-top: 70px;
-                            font-weight: bolder;
-                            color: #212529;
-                            width: 100%;
-                            font-size: 30px;
-                        }
-                
-                        p,
-                        li {
-                            font-weight: 400;
-                            line-height: 1.5;
-                            color: #212529;
-                            font-size: 18px;
-                        }
-                
-                        span {
-                            font-weight: bold;
-                            color: #212529
-                        }
-        }                    
-    .pricing {
-                                    display: flex;
-                                    flex-direction: row;
-                                    margin-top: 50px;
-                                    justify-content: space-between;
-                                    align-items: center;
-                
-                                    .wardrobe__ptice {
-                                        align-items: center;
-                                        background: #E5E0DC;
-                                        display: flex;
-                                        flex-direction: column;
-                                        justify-content: space-between;
-                                        border: none;
-                                        border-radius: 5px;
-                                        padding: 15px;
-                
-                                        p {
-                                            text-align: center;
-                                            width: 100%;
-                                            font-size: 30px;
-                                        }
-                
-                                        .price__text {
-                                            text-align: center;
-                                            width: 100%;
-                                            font-size: 15px;
-                                            color: #978A81;
-                                            padding-bottom: 20px;
-                                        }
-                
-                                        span {
-                                            font-weight: bolder;
-                                            text-align: center;
-                                            width: 100%;
-                                            font-size: 25px;
-                                        }
-                
-                                        a {
-                                            text-decoration: none;
-                                            font-family: Calibri;
-                                            font-size: 20px;
-                                            letter-spacing: 1px;
-                                            line-height: 15px;
-                                            border-radius: 10px;
-                                            background: #C28F7A;
-                                            transition: all 0.3s ease 0s;
-                                            display: block;
-                                            color: #212529;
-                                            padding: 10px;
-                                            text-align: center;
-                                            max-width: 200PX;
-                                            &:hover {
-                                                color: #FFF;
-                                                background: #b5ad96;
-                                                border: 2px solid #b5ad96;
-                                                text-decoration: none;
-                                            }
-                                        }
-                                    }
-                
-                                    
+    font-family: Calibri;
+    flex-direction: column;
+    max-width: 1190px;
+.escort__content {
+    .escort__title2 {
+            color: #8F8774;
+            width: 100%;
+            font-size: 20px;
         }
-          
-    
-    }
+        .escort__title {
+            color: #382C24;
+            width: 100%;
+            font-size: 35px;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+            padding-bottom: 20px;
+        }
+        .escort__description{
+            display: flex;
+            margin-top: 20px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+    .escort__info {
+            text-align: start;
+            padding-right: 20px;
+            .escort__sort,
+            .escort__process,
+            .escort__desc,
+            .any__info {
+                margin-top: 20px;
+                .subtitle {
+                    width: 100%;
+                    font-size: 30px;
+                    color: #5A5C44;
+                    margin: 30px 0;
+                }
+                .title {
+                    // margin-top: 70px;
+                    font-weight: bolder;
+                    color: #212529;
+                    width: 100%;
+                    font-size: 30px;
+                }
+                p,
+                li {
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: #212529;
+                    font-size: 18px;
+                }
+                span {
+                    font-weight: bold;
+                    color: #212529
+                }
+            }
+        }
+        }
     }
         .escort__email {
             padding-top: 30px;
-            text-align: left;
+            text-align: center;
             font-size: x-large;
             color: #382C24;
-    
             .escort__email2 {
                 text-decoration: none;
                 text-align: left;
                 font-size: x-large;
                 color: #382C24;
-    
                 &:hover {
                     text-decoration: underline;
                     color: #665f50;
+                }
+            }
+        }
+        .pricing {
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            justify-content: space-between;
+            align-items: center;
+            .wardrobe__ptice {
+                align-items: center;
+                background: #E5E0DC;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border: none;
+                border-radius: 5px;
+                padding: 15px;
+                p {
+                    text-align: center;
+                    width: 100%;
+                    font-size: 30px;
+                }
+                .price__text {
+                    text-align: center;
+                    width: 100%;
+                    font-size: 15px;
+                    color: #978A81;
+                    padding-bottom: 20px;
+                }
+                span {
+                    font-weight: bolder;
+                    text-align: center;
+                    width: 100%;
+                    font-size: 25px;
+                }
+                a {
+                    text-decoration: none;
+                    font-family: Calibri;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    line-height: 15px;
+                    border-radius: 10px;
+                    background: #C28F7A;
+                    transition: all 0.3s ease 0s;
+                    display: block;
+                    color: #212529;
+                    padding: 10px;
+                    text-align: center;
+                    max-width: 200PX;
+                    &:hover {
+                        color: #FFF;
+                        background: #b5ad96;
+                        border: 2px solid #b5ad96;
+                        text-decoration: none;
+                    }
                 }
             }
         }
