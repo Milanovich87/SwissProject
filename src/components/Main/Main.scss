@@ -43,3 +43,45 @@
 color: #5A5C44;
 font-size: 20px;
 }
+
+@media(max-width: 480px) {
+    .main{
+        display: block;
+        padding: 20px 10px;
+        .main__content {
+                text-align: start;
+                .main__title {
+                        color: #5A5C44;
+                        font-size: 18px;
+                    }
+                .firstname,
+                .lastname {
+                    font-weight: bolder;
+                    font-size: 40px;
+                    color: #382C24;
+                    font-family: Book Antiqua;
+                }
+        
+                .instagram {
+                    color: #382C24;
+                    font-size: 18px;
+                    text-decoration: none;
+                    background-color: transparent;
+        
+                    &:hover {
+                        border-bottom: 1px solid #382C24;
+                    }
+                }
+                .text {
+                    margin-top: 50px;
+                    color: #382C24;
+                    font-size: 20px;
+                }
+            }
+            .main__image {
+                .user__image {
+                    max-width: 100%;
+                }
+            }
+    }
+}
