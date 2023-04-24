@@ -11,8 +11,9 @@ import serv2 from "../../assets/imagesCards/serv2.jpg";
 import serv3 from "../../assets/imagesCards/serv3.jpg";
 // @ts-ignore-end
 import { NavLink } from 'react-router-dom';
-
+import ScrollToTop from '../scroll111';
 export const Services = () => {
+
     return (
         // <div className="services"  >
         //     <div className="services__header" >
@@ -61,28 +62,29 @@ export const Services = () => {
         <div className="services"  >
             <div className="services__header" >
                 <h2 className='services__title' >МОИ УСЛУГИ</h2>
-                <p className='services__text'>Здесь вы можете ознакомиться с моими услугами более подробно</p>
+                <p className='services__text' >Здесь вы можете ознакомиться с моими услугами более подробно</p>
             </div>
             <CardGroup>
                 <Card className="md-light text-white">
                     <Card.Img src={serv1} alt="Card image" />
                     <Card.ImgOverlay>
                         <Card.Title>СТАЙЛИНГ</Card.Title>
-                        <NavLink className='btn btn-outline-warning' to='/styling'>Подробнее</NavLink>
+                        <NavLink onClick={ScrollToTop} className='btn btn-outline-warning' to='/styling' >Подробнее</NavLink>
+
                     </Card.ImgOverlay>
                 </Card>
                 <Card className="md-light text-white">
                     <Card.Img src={serv2} alt="Card image" />
                     <Card.ImgOverlay>
                         <Card.Title>РАЗБОР ГАРДЕРОБА И ШОПИНГ СОПРОВОЖДЕНИЕ</Card.Title>
-                        <NavLink className='btn btn-outline-warning' to='/wardrobe'>Подробнее</NavLink>
+                        <NavLink onClick={ScrollToTop} className='btn btn-outline-warning' to='/wardrobe'>Подробнее</NavLink>
                     </Card.ImgOverlay>
                 </Card>
                 <Card className="md-light text-white">
                     <Card.Img src={serv3} alt="Card image" />
                     <Card.ImgOverlay>
                         <Card.Title>ГОДОВОЕ СОПРОВОЖДЕНИЕ</Card.Title>
-                        <NavLink className='btn btn-outline-warning' to='/escort'>Подробнее</NavLink>
+                        <NavLink onClick={ScrollToTop} className='btn btn-outline-warning' to='/escort'>Подробнее</NavLink>
                     </Card.ImgOverlay>
                 </Card>
             </CardGroup>
