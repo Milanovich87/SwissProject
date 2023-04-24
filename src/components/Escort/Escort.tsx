@@ -68,7 +68,7 @@ export const Escort = () => {
                 </div>
             </div>
             <h2 className="escort__email">
-                запись на услуги <a className="escort__email2" href="mailto: info@milanovich.ch">info@milanovich.ch</a>
+                запись на услуги&nbsp;<a className="escort__email2" href="mailto: info@milanovich.ch">info@milanovich.ch</a>
             </h2>
         </div>
     )
