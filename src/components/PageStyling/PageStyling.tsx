@@ -36,7 +36,7 @@ export const PageStyling = () => {
                 <div className="wardrobe__ptice">
                     <p >МУЖЧИНЫ / ЖЕНЩИНЫ</p>
                     <p className="price__text">КАЖДУЮ УСЛУГУ МОЖНО ПРИОБРЕСТИ ОТДЕЛЬНО</p>
-                    <p >СТИЛИЗАЦИЯ ОБРАЗОВ (2 часа)</p>
+                    <p >СТИЛИЗАЦИЯ ОБРАЗОВ<br></br>(2 часа)</p>
                     <p ><span>300 евро (франков)</span></p>
                     <p >DUET. ШОПИНГ + СТИЛИЗАЦИЯ</p>
                     <p ><span>650 евро (франков)</span></p>
