@@ -6,25 +6,43 @@
     font-family: Calibri;
     flex-direction: column;
     max-width: 1190px;
-                            .styling__email {
-                                    padding-top: 30px;
-                                    text-align: left;
-                                    font-size: x-large;
-                                    color: #382C24;
-                                    display: flex;
-                                    justify-content: center;
-                                    a {
-                                        text-decoration: none;
-                                        text-align: left;
-                                        font-size: x-large;
-                                        color: #382C24;
+                            // .styling__email {
+                            //         padding-top: 30px;
+                            //         text-align: left;
+                            //         font-size: x-large;
+                            //         color: #382C24;
+                            //         display: flex;
+                            //         justify-content: center;
+                            //         a {
+                            //             text-decoration: none;
+                            //             text-align: left;
+                            //             font-size: x-large;
+                            //             color: #382C24;
                             
-                                        &:hover {
-                                            text-decoration: underline;
-                                            color: #665f50;
-                                        }
-                                    }
+                            //             &:hover {
+                            //                 text-decoration: underline;
+                            //                 color: #665f50;
+                            //             }
+                            //         }
+                            //     }
+                        .styling__email {
+                            padding-top: 30px;
+                            text-align: center;
+                            font-size: x-large;
+                            color: #382C24;
+            
+                            .styling__email2 {
+                                text-decoration: none;
+                                text-align: left;
+                                font-size: x-large;
+                                color: #382C24;
+            
+                                &:hover {
+                                    text-decoration: underline;
+                                    color: #665f50;
                                 }
+                            }
+                        }
             .pricing {
                     display: flex;
                     flex-direction: row;
