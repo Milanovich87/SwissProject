@@ -133,3 +133,152 @@
     }
    
 }
+
+@media(max-width: 480px) {
+    .styling {
+            margin: 0 auto;
+            padding: 20px 10px;
+            background-color: #CECBC4;
+            display: flex;
+            font-family: Calibri;
+            flex-direction: column;
+            max-width: 1190px;
+    
+            .styling__email {
+                padding-top: 30px;
+                text-align: left;
+                font-size: x-large;
+                color: #382C24;
+                display: flex;
+                justify-content: center;
+    
+                a {
+                    text-decoration: none;
+                    text-align: left;
+                    font-size: x-large;
+                    color: #382C24;
+    
+                    &:hover {
+                        text-decoration: underline;
+                        color: #665f50;
+                    }
+                }
+            }
+    
+            .pricing {
+                display: flex;
+                flex-direction: row;
+                margin-top: 50px;
+                justify-content: center;
+                align-items: center;
+    
+                .wardrobe__ptice {
+                    background: #E5E0DC;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 15px;
+                    align-items: center;
+    
+                    p {
+                        text-align: center;
+                        width: 100%;
+                        font-size: 25px;
+                    }
+    
+                    .price__text {
+                        text-align: center;
+                        width: 100%;
+                        font-size: 15px;
+                        color: #978A81;
+                        padding-bottom: 20px;
+                    }
+    
+                    span {
+                        font-weight: bolder;
+                        text-align: center;
+                        width: 100%;
+                        font-size: 25px;
+                    }
+    
+                    a {
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 20px;
+                        letter-spacing: 1px;
+                        line-height: 15px;
+                        border-radius: 10px;
+                        background: #C28F7A;
+                        transition: all 0.3s ease 0s;
+                        display: block;
+                        color: #212529;
+                        padding: 10px;
+                        max-width: 200px;
+    
+                        &:hover {
+                            color: #FFF;
+                            background: #b5ad96;
+                            border: 2px solid #b5ad96;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+    
+            .styling__content {
+    
+                // display: flex;
+                .styling__title {
+                    color: #382C24;
+                    width: 100%;
+                    font-size: 35px;
+                    margin-bottom: 20px;
+                }
+    
+                .styling__title2 {
+                    color: #8F8774;
+                    width: 100%;
+                    font-size: 20px;
+                }
+    
+                .styling__info {
+                    display: flex;
+                    flex-wrap: wrap-reverse;
+                    justify-content: space-between;
+                    gap: 20px;
+                    align-items: center;
+                    border-top: 1px solid rgba(0, 0, 0, .1);
+                    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    
+                    .styling__image {
+                        padding: 20px 0;
+                    }
+    
+                    .styling__text {
+                        font-size: 25px;
+                        color: #5A5C44;
+                        text-align: start;
+    
+                        span {
+                            font-weight: bold;
+                        }
+                    }
+                }
+    
+                .price {
+                    padding-top: 150px;
+    
+                    .styling__price {
+                        color: #665f50;
+                        width: 100%;
+                        font-size: 24px;
+                    }
+                }
+    
+    
+            }
+    
+        }
+}
