@@ -1,5 +1,4 @@
-
-
+/* eslint-disable jsx-a11y/alt-text */
 // @ts-ignore-start
 import photo1 from '../../assets/imagesSlider/1.jpg';
 // @ts-ignore-end
@@ -20,7 +19,6 @@ import photo6 from '../../assets/imagesSlider/6.jpg';
 // @ts-ignore-end
 
 
-import React, { Component, useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
